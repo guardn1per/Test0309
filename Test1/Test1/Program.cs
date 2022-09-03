@@ -10,8 +10,6 @@ namespace Test1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Integer27(8));
-            Console.ReadLine();
         }
 
         public static int Integer8(int A)
@@ -57,5 +55,44 @@ namespace Test1
             return min;
         }
 
+        public static int If18((int a, int b, int c) nums)
+        {
+            if (nums.a == nums.b)
+                return 3;
+            if (nums.a == nums.c)
+                return 2;
+            return 1;
+        }
+
+        public static int If27(double x)
+        {
+            if (x < 0)
+                return 0;
+            if (Math.Truncate(x) % 2 == 0)
+                return 1;
+            return -1;
+        }
+
+        public static double For10(double N)
+        {
+            double result = 0;
+            for (double i = 1; i <= N; i++)
+            {
+                result += 1 / i;
+            }
+            return result;
+        }
+
+        public static int While10(int N)
+        {
+            int res = 0;
+            int Pow3 = 1;
+            while(Pow3 < N)
+            {
+                Pow3 *= 3;
+                res++;
+            }
+            return res;
+        }
     }
 }
